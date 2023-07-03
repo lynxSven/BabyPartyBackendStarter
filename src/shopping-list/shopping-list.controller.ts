@@ -30,6 +30,6 @@ export class ShoppingListController {
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.shoppingListService.remove(+id);
+    return this.shoppingListService.remove(id);
   }
 }
