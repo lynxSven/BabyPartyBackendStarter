@@ -5,7 +5,7 @@ import { UpdateShoppingListDto } from './dto/update-shopping-list.dto';
 
 @Controller('shopping-list')
 export class ShoppingListController {
-  constructor(private readonly shoppingListService: ShoppingListService) {}
+  constructor(private readonly shoppingListService: ShoppingListService) { }
 
   @Post()
   create(@Body() createShoppingListDto: CreateShoppingListDto) {
@@ -13,7 +13,7 @@ export class ShoppingListController {
   }
 
   @Get()
-  findAll() {
+  findAll(): Promise<ShoppingItem[]> {
     return this.shoppingListService.findAll();
   }
 

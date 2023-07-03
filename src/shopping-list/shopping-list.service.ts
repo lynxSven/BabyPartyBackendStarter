@@ -1,15 +1,21 @@
-import { Injectable } from '@nestjs/common';
+
 import { CreateShoppingListDto } from './dto/create-shopping-list.dto';
 import { UpdateShoppingListDto } from './dto/update-shopping-list.dto';
+import { ShoppingItem } from './schemas/shopping-list.schema';
+
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
 
 @Injectable()
 export class ShoppingListService {
-  create(createShoppingListDto: CreateShoppingListDto) {
-    return 'This action adds a new shoppingList';
+  create(createShoppingListDto: CreateShoppingListDto, 
+    @InjectModel(TodoItem.name)
+    private readonly shoppingItemModel: Model<ShoppingItem>) {
+,
   }
 
-  findAll() {
-    return `This action returns all shoppingList`;
+  findAll() Promise<ShoppingItem[]>{
+    return this.todoItemModel.find().exec();
   }
 
   findOne(id: number) {
