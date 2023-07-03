@@ -31,6 +31,9 @@ export class ShoppingListService {
   }
 
   async remove(id: number) {
-    return `This action removes a #${id} shoppingList`;
+    const deleted = await this.shoppingItemModel
+      .findByIdAndRemove({ _id: id })
+      .exec();
+    return deleted;
   }
 }
