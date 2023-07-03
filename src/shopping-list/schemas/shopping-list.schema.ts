@@ -1,15 +1,22 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
-export type TodoItemDocument = TodoItem & Document;
+export type ShoppingItemDocument = ShoppingItem & Document;
 
 @Schema()
-export class TodoItem {
+export class ShoppingItem {
   @Prop({ required: true })
-  title: string;
+  headline: string;
 
-  @Prop({ default: false })
-  done: boolean;
+  @Prop({ required: false })
+  text: string;
+
+  
+  @Prop({ required: false })
+  href: string;
+
+  @Prop({ required: false })
+  hrefImg: string;
 }
 
-export const TodoItemSchema = SchemaFactory.createForClass(TodoItem);
+export const TodoItemSchema = SchemaFactory.createForClass(ShoppingItem);
