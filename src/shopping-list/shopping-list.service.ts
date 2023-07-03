@@ -8,25 +8,28 @@ import { Model } from 'mongoose';
 
 @Injectable()
 export class ShoppingListService {
-  create(createShoppingListDto: CreateShoppingListDto, 
-    @InjectModel(TodoItem.name)
-    private readonly shoppingItemModel: Model<ShoppingItem>) {
-,
-  }
+  @InjectModel(TodoItem.name)
+  private readonly shoppingItemModel: Model<ShoppingItem>) {
 
-  findAll() Promise<ShoppingItem[]>{
-    return this.todoItemModel.find().exec();
-  }
+}
 
-  findOne(id: number) {
-    return `This action returns a #${id} shoppingList`;
-  }
+create(createShoppingListDto: CreateShoppingListDto) {
+  return 'This action adds a new shoppingList';
+}
 
-  update(id: number, updateShoppingListDto: UpdateShoppingListDto) {
-    return `This action updates a #${id} shoppingList`;
-  }
+findAll() Promise < ShoppingItem[] > {
+  return this.todoItemModel.find().exec();
+}
 
-  remove(id: number) {
-    return `This action removes a #${id} shoppingList`;
-  }
+findOne(id: number) {
+  return `This action returns a #${id} shoppingList`;
+}
+
+update(id: number, updateShoppingListDto: UpdateShoppingListDto) {
+  return `This action updates a #${id} shoppingList`;
+}
+
+remove(id: number) {
+  return `This action removes a #${id} shoppingList`;
+}
 }
