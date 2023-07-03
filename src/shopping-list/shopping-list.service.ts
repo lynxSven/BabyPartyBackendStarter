@@ -15,7 +15,7 @@ export class ShoppingListService {
 
 
   async create(createShoppingListDto: CreateShoppingListDto) {
-    return 'This action adds a new shoppingList';
+    return this.shoppingItemModel.create(createShoppingListDto);
   }
 
   async findAll(): Promise<ShoppingItem[]> {
