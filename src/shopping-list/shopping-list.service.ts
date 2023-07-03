@@ -5,31 +5,32 @@ import { ShoppingItem } from './schemas/shopping-list.schema';
 
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
+import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class ShoppingListService {
-  @InjectModel(TodoItem.name)
-  private readonly shoppingItemModel: Model<ShoppingItem>) {
 
-}
+  constructor(@InjectModel(ShoppingItem.name)
+  private readonly shoppingItemModel: Model<ShoppingItem>) { }
 
-create(createShoppingListDto: CreateShoppingListDto) {
-  return 'This action adds a new shoppingList';
-}
 
-findAll() Promise < ShoppingItem[] > {
-  return this.todoItemModel.find().exec();
-}
+  async create(createShoppingListDto: CreateShoppingListDto) {
+    return 'This action adds a new shoppingList';
+  }
 
-findOne(id: number) {
-  return `This action returns a #${id} shoppingList`;
-}
+  async findAll(): Promise<ShoppingItem[]> {
+    return this.shoppingItemModel.find().exec();
+  }
 
-update(id: number, updateShoppingListDto: UpdateShoppingListDto) {
-  return `This action updates a #${id} shoppingList`;
-}
+  async findOne(id: number) {
+    return `This action returns a #${id} shoppingList`;
+  }
 
-remove(id: number) {
-  return `This action removes a #${id} shoppingList`;
-}
+  async update(id: number, updateShoppingListDto: UpdateShoppingListDto) {
+    return `This action updates a #${id} shoppingList`;
+  }
+
+  async remove(id: number) {
+    return `This action removes a #${id} shoppingList`;
+  }
 }
