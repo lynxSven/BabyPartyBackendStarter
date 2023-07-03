@@ -19,4 +19,4 @@ export class ShoppingItem {
   hrefImg: string;
 }
 
-export const TodoItemSchema = SchemaFactory.createForClass(ShoppingItem);
+export const ShoppingItemSchema = SchemaFactory.createForClass(ShoppingItem);
