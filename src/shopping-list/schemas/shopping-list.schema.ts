@@ -17,6 +17,9 @@ export class ShoppingItem {
 
   @Prop({ required: false })
   hrefImg: string;
+
+  @Prop({ required: false })
+  assignedUser: string;
 }
 
 export const ShoppingItemSchema = SchemaFactory.createForClass(ShoppingItem);
