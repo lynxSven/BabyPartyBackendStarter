@@ -19,7 +19,7 @@ export class ShoppingListService {
   }
 
   async findAll(): Promise<ShoppingItem[]> {
-    return this.shoppingItemModel.find().exec();
+    return this.shoppingItemModel.find({"assignedUser": null}).exec();
   }
 
   async findOne(id: number) {
@@ -31,7 +31,6 @@ export class ShoppingListService {
   }
 
   async findAllForCurrentUser(): Promise<ShoppingItem[]> {
-    const query: any = { user: new mongoose.Types.ObjectId(1) }
     return this.shoppingItemModel.find().exec();
   }
 
