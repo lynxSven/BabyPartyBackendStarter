@@ -19,7 +19,7 @@ export class ShoppingListController {
   }
   
   @Get('currentUser/:loginName')
-  findCurrentUser(@Param('id') loginName: string): Promise<ShoppingItem[]> {
+  findCurrentUser(@Param('loginName') loginName: string): Promise<ShoppingItem[]> {
     return this.shoppingListService.findAllForCurrentUser(loginName);
   }
 
