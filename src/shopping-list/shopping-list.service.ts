@@ -4,7 +4,7 @@ import { UpdateShoppingListDto } from './dto/update-shopping-list.dto';
 import { ShoppingItem } from './schemas/shopping-list.schema';
 
 import { InjectModel } from '@nestjs/mongoose';
-import { Model } from 'mongoose';
+import mongoose, { Model } from 'mongoose';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
@@ -28,6 +28,11 @@ export class ShoppingListService {
 
   async update(id: number, updateShoppingListDto: UpdateShoppingListDto) {
     return `This action updates a #${id} shoppingList`;
+  }
+
+  async findAllForCurrentUser(): Promise<ShoppingItem[]> {
+    const query: any = { user: new mongoose.Types.ObjectId(1) }
+    return this.shoppingItemModel.find().exec();
   }
 
   async remove(id: string) {

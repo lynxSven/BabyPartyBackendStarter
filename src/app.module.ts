@@ -5,6 +5,7 @@ import { join } from 'path';
 
 import { TodoitemsModule } from './todoitems/todoitems.module';
 import { ShoppingListModule } from './shopping-list/shopping-list.module';
+import { UserModule } from './user/user.module';
 
 const databaseUrl =
   process.env.DATABASE_URL || 'mongodb://localhost:27017/test';
@@ -17,6 +18,7 @@ const databaseUrl =
     }),
     TodoitemsModule,
     ShoppingListModule,
+    UserModule,
   ],
   controllers: [],
   providers: [],

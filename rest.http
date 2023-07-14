@@ -1,0 +1,94 @@
+###
+GET https://babypartybackend.adaptable.app/todos
+
+###
+GET https://babypartybackend.adaptable.app/shopping-list
+
+###
+POST https://babypartybackend.adaptable.app/shopping-list
+Content-Type:	application/json
+
+{
+  "headline": "Beistellbett",
+  "href": "https://babybay.de/babybay-boxspring-beistellbett",
+  "hrefImg": "https://babybay.de/media/image/54/67/3c/babybay-boxspring-beistellbett-weiss-lackiert-166102-001XKqUiJ8H0zPsq_600x600@2x..jpg"
+}
+
+
+###
+POST https://babypartybackend.adaptable.app/shopping-list
+Content-Type:	application/json
+
+{
+  "headline": "Babybogen",
+  "hrefImg": "https://wunsch-kind.at/wp-content/uploads/2019/03/spielbogen-1200-630-oh.jpg"
+}
+
+###
+{
+  "headline": "Eimer für Windelvlies",
+  "href": "https://www.windelmanufaktur.com/de/stoffwindeln/stoffwindel-zubehoer/feuchttuecher/feuchttuecherset-einfach-grau",
+  "hrefImg": "https://www.windelmanufaktur.com/cdn-cgi/image/width%3D1920%2Cquality%3D85%2Cformat%3Dauto/media/e2/97/e2/1633446352/feuchtt-cher-im-set-10-st-ck---einfach-grau2b483.jpg"
+}
+###
+
+{
+  "headline": "Feuchttücher",
+  "href": "https://www.windelmanufaktur.com/de/stoffwindeln/stoffwindel-zubehoer/feuchttuecher/feuchttuecherset-einfach-grau",
+  "hrefImg": "https://www.windelmanufaktur.com/cdn-cgi/image/width%3D1920%2Cquality%3D85%2Cformat%3Dauto/media/e2/97/e2/1633446352/feuchtt-cher-im-set-10-st-ck---einfach-grau2b483.jpg"
+}
+
+
+###
+{
+  "headline": "Wetbag",
+  "href": "https://www.windelmanufaktur.com/de/wetbags/grosse-wetbags/zwbgschwarz",
+  "hrefImg": "https://www.windelmanufaktur.com/cdn-cgi/image/width%3D1920%2Cquality%3D85%2Cformat%3Dauto/media/f6/6f/43/1633434090/wetbag-schwarz5ee74.jpg"
+}
+
+###
+
+{
+  "headline": "Wickelunterlage",
+  "hrefImg": "https://images.ctfassets.net/cqk6d0vgg7xr/1hRCeGRMLYYc67Yht35Wts/2f4e024614c915676043d9db3507c8ba/HEDDA00272.jpg"
+}
+
+###
+{
+  "headline": "Spucktücher / Mullwindeln",
+  "href": "https://www.baby-walz.de/p/bornino-basics-mullwindeln-im-8er-pack-80-x-80cm-p1205093/?variantId=P1205093_32699932&ff_campaign=&ff_origPageSize=60&ff_pos=2&ff_page=1&ff_query=Ern%c3%a4hrung%2fStillen%2fSpuckt%c3%bccher&ff_mid=38069",
+  "hrefImg": "https://images.baby-walz.de/v2/470x470_r1/iv2/Bilder/Artikelbilder/02/20/92/0220927/0220927_04/jpg/image.jpg"
+}
+
+###
+{
+  "headline": "Babybadewanne",
+  "href": "https://www.amazon.de/dp/B07X2TFZCL?linkCode=ogi&th=1&tag=familie-de-21&ascsubtag=f7e1fbc3-d6c1-4bb5-a3b8-045ae7b80747",
+  "hrefImg": "https://m.media-amazon.com/images/I/71C7xD-QdTL._AC_SL1500_.jpg"
+}
+
+###
+{
+  "headline": "Matratze für Beistellbett",
+   "hrefImg": "https://img.babymarkt.com/isa/163853/c3/detailpage_desktop_600/-/8cc2b62a414a484a80cfe8fec7634229/traeumeland-matratze-fuer-beistellbett-brise-light-50-x-88-cm-a110923"
+}
+
+
+
+###
+{
+  "headline": "Beistellbett",
+  "href": "https://babybay.de/babybay-boxspring-beistellbett",
+  "hrefImg": "https://babybay.de/media/image/54/67/3c/babybay-boxspring-beistellbett-weiss-lackiert-166102-001XKqUiJ8H0zPsq_600x600@2x..jpg"
+}
+
+###
+{
+  "headline": "Kinderfläschen",
+  "text": "lorem",
+  "href": "string",
+  "hrefImg": "SVGStringList"
+}
+
+###
+DELETE https://babypartybackend.adaptable.app/shopping-list/64a463e9128348ecd2e3d9df
