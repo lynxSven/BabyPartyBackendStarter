@@ -17,6 +17,11 @@ export class ShoppingListController {
   findAll(): Promise<ShoppingItem[]> {
     return this.shoppingListService.findAll();
   }
+  
+  @Get('currentUser/:loginName')
+  findCurrentUser(@Param('id') loginName: string): Promise<ShoppingItem[]> {
+    return this.shoppingListService.findAllForCurrentUser(loginName);
+  }
 
   @Get(':id')
   findOne(@Param('id') id: string) {

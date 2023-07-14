@@ -19,7 +19,7 @@ export class ShoppingListService {
   }
 
   async findAll(): Promise<ShoppingItem[]> {
-    return this.shoppingItemModel.find({"assignedUser": null}).exec();
+    return this.shoppingItemModel.find({ "assignedUser": null }).exec();
   }
 
   async findOne(id: number) {
@@ -30,8 +30,8 @@ export class ShoppingListService {
     return `This action updates a #${id} shoppingList`;
   }
 
-  async findAllForCurrentUser(): Promise<ShoppingItem[]> {
-    return this.shoppingItemModel.find().exec();
+  async findAllForCurrentUser(currentUser: string): Promise<ShoppingItem[]> {
+    return this.shoppingItemModel.find({ "assignedUser": currentUser }).exec();
   }
 
   async remove(id: string) {
