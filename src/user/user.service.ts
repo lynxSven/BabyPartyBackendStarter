@@ -15,7 +15,7 @@ export class UserService {
   }
 
   findAll() {
-    return this.userItemModel.find().exec();
+    return this.userItemModel.find().sort({loginName: 1}).exec();
 
   }
 
