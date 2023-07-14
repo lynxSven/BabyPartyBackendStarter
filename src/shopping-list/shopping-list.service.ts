@@ -20,7 +20,7 @@ export class ShoppingListService {
   }
 
   async findAll(): Promise<ShoppingItem[]> {
-    return this.shoppingItemModel.find({ "assignedUser": null }).exec();
+    return this.shoppingItemModel.find({ $or:[{"assignedUser": null},{ "assignedUser": "" }]  }).exec();
   }
 
   async findOne(id: number) {
@@ -29,18 +29,18 @@ export class ShoppingListService {
 
   async update(id: number, updateShoppingListDto: UpdateShoppingListDto): Promise<ShoppingItem> {
     return this.shoppingItemModel
-    .findOneAndUpdate({ _id: id }, updateShoppingListDto, {
-      returnDocument: 'after',
-    })
-    .exec();
+      .findOneAndUpdate({ _id: id }, updateShoppingListDto, {
+        returnDocument: 'after',
+      })
+      .exec();
   }
 
   async updateUser(id: string, updateShoppingListDto: UpdateShoppingListUserDto): Promise<ShoppingItem> {
     return this.shoppingItemModel
-    .findOneAndUpdate({ _id: id }, updateShoppingListDto, {
-      returnDocument: 'after',
-    })
-    .exec();
+      .findOneAndUpdate({ _id: id }, updateShoppingListDto, {
+        returnDocument: 'after',
+      })
+      .exec();
   }
 
   async findAllForCurrentUser(currentUser: string): Promise<ShoppingItem[]> {
