@@ -1,0 +1,208 @@
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Anke"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Annabell & Björn"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Jana & Finn"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Pam & Malte"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Timmy Büsing"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Nele"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Finja"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Hanna Schneider"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Ali"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Anneke"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Ve"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Arnold"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Arwed"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Bodo"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Cedrick"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Christine & Markus"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Frauke & Halkard & Richard"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Hanna Kolthoff"
+}
+
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Hanna Kolthoff"
+}
+
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Helga"
+}
+
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+    "loginName": "Hendrik"
+}
+
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Jule"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Len"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Lena"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Marie"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Oskar"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Tabea"
+}
+
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Tim"
+}
+###
+POST https://babypartybackend.adaptable.app/user
+Content-Type:	application/json
+
+{
+  "loginName": "Tine & Paule & Nina & Kai & Lotta"
+}
