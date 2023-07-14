@@ -36,7 +36,7 @@ export class ShoppingListController {
 
   @Patch('currentUser/:id')
   updateUser(@Param('id') id: string, @Body() updateShoppingListUserDto: UpdateShoppingListUserDto) {
-    return this.shoppingListService.updateUser(+id, updateShoppingListUserDto);
+    return this.shoppingListService.updateUser(id, updateShoppingListUserDto);
   }
 
   @Delete(':id')

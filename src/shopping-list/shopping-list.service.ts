@@ -35,7 +35,7 @@ export class ShoppingListService {
     .exec();
   }
 
-  async updateUser(id: number, updateShoppingListDto: UpdateShoppingListUserDto): Promise<ShoppingItem> {
+  async updateUser(id: string, updateShoppingListDto: UpdateShoppingListUserDto): Promise<ShoppingItem> {
     return this.shoppingItemModel
     .findOneAndUpdate({ _id: id }, updateShoppingListDto, {
       returnDocument: 'after',
