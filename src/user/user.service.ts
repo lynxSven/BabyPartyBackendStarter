@@ -1,15 +1,22 @@
 import { Injectable } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { UserItem, UserSchema } from './schemas/user.schema';
 
 @Injectable()
 export class UserService {
+
+  constructor(@InjectModel(UserItem.name)
+  private readonly userItemModel: Model<UserItem>) { }
   create(createUserDto: CreateUserDto) {
-    return 'This action adds a new user';
+    return this.userItemModel.create(createUserDto);
   }
 
   findAll() {
-    return `This action returns all user`;
+    return this.userItemModel.find().exec();
+
   }
 
   findOne(id: number) {

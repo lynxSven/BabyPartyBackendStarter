@@ -11,7 +11,6 @@ export class ShoppingItem {
   @Prop({ required: false })
   text: string;
 
-  
   @Prop({ required: false })
   href: string;
 
