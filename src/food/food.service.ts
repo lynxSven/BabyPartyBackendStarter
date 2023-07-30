@@ -1,15 +1,23 @@
 import { Injectable } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
 import { CreateFoodDto } from './dto/create-food.dto';
 import { UpdateFoodDto } from './dto/update-food.dto';
+import { FoodItem } from './schemas/shopping-list.schema';
 
 @Injectable()
 export class FoodService {
+
+
+  constructor(@InjectModel(FoodItem.name)
+  private readonly foodItemModel: Model<FoodItem>) { }
+  
   create(createFoodDto: CreateFoodDto) {
-    return 'This action adds a new food';
+    return 'implement me'
   }
 
   findAll() {
-    return `This action returns all food`;
+    return this.foodItemModel.find().exec();
   }
 
   findOne(id: number) {
