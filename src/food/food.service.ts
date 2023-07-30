@@ -28,7 +28,7 @@ export class FoodService {
     return `This action updates a #${id} food`;
   }
 
-  async remove(id: number) {
+  async remove(id: string) {
     const deleted = await this.foodItemModel
     .findByIdAndRemove({ _id: id })
     .exec();
