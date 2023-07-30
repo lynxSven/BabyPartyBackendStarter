@@ -29,6 +29,6 @@ export class FoodController {
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.foodService.remove(+id);
+    return this.foodService.remove(id);
   }
 }
