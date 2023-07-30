@@ -1,1 +1,5 @@
-export class CreateFoodDto {}
+export class CreateFoodDto {
+  headline: string;
+  text?: string;
+  user: string;
+}
