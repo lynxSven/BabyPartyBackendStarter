@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { CreateFoodDto } from './dto/create-food.dto';
 import { UpdateFoodDto } from './dto/update-food.dto';
-import { FoodItem } from './schemas/shopping-list.schema';
+import { FoodItem } from './schemas/food.schema';
 
 @Injectable()
 export class FoodService {
@@ -13,7 +13,7 @@ export class FoodService {
   private readonly foodItemModel: Model<FoodItem>) { }
   
   create(createFoodDto: CreateFoodDto) {
-    return 'implement me'
+    return this.foodItemModel.create(createFoodDto);
   }
 
   findAll() {
