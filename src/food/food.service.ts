@@ -28,7 +28,10 @@ export class FoodService {
     return `This action updates a #${id} food`;
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} food`;
+  async remove(id: number) {
+    const deleted = await this.foodItemModel
+    .findByIdAndRemove({ _id: id })
+    .exec();
+  return deleted;
   }
 }
